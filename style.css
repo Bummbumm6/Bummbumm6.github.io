@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+body {
+    background-image: radial-gradient( circle 975px at 2.6% 48.3%,  rgb(0, 9, 32) 0%, rgb(0, 47, 117) 99.7% );
+}
+
+p {
+    color: white;
+    font-family: Rubik;
+}
+
+h1 {
+    color: white;
+    font-family: "Rubik Mono One", monospace;
+}
+
+.title {
+    margin-top: 1%;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.288);
+    border-radius: 2vw;
+    height: 10%;
+    align-items: center;
+    justify-content: center;
+    place-items: center;
+}
+
+.titletext {
+    text-align: center;
+    font-size: 5lvb;
+}
+
+.languages {
+    background-color: rgba(0, 0, 0, 0.288);
+    border-radius: 2vw;
+    width: 30%;
+    height: 85%;
+    margin-top: 1%;
+    display: list-item;
+}
+
+.lang-icon {
+    width: 35%;
+    position: relative;
+    display: inline-block;
+}
+
+.lang-icon-html {
+    width: 25%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+}
+
+.lang-icon-unity {
+    width: 22%;
+    margin-left: 5.5%;
+    margin-right: 7.5%;
+    margin-top: 6.5%;
+}
+
+.inline {
+    display: inline-block;
+}
+
+.middle-section {
+    background-color: rgba(0, 0, 0, 0.288);
+    border-radius: 2vw;
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 0;
+    height: 87%;
+    width: 30%;
+}
+
+.unitymargin {
+    top: 1.5%;
+    position: relative;
+}
