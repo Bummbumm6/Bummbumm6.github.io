@@ -34,10 +34,11 @@ h1 {
 .languages {
     background-color: rgba(0, 0, 0, 0.288);
     border-radius: 2vw;
-    width: 30%;
+    width: 33.3%;
     height: 85%;
     margin-top: 1%;
-    display: list-item;
+    display: inline-block;
+    position:relative;
 }
 
 .lang-icon {
@@ -58,23 +59,64 @@ h1 {
     margin-left: 5.5%;
     margin-right: 7.5%;
     margin-top: 6.5%;
+    margin-bottom: 6.5%;
 }
 
 .inline {
-    display: inline-block;
+    margin: 1%;
+    display: inline-flex;
 }
 
 .middle-section {
     background-color: rgba(0, 0, 0, 0.288);
     border-radius: 2vw;
     display: inline-block;
-    margin-top: 0;
-    margin-bottom: 0;
-    height: 87%;
-    width: 30%;
+    height: 85%;
+    width: 33.3%;
+    position: relative;
 }
 
 .unitymargin {
     top: 1.5%;
-    position: relative;
+    bottom: 1.5%;
+    position: static;
+}
+
+.projecttext {
+    font-size: 3lvb;
+    text-align: center;
+}
+
+.hclogo {
+    width: 25%;
+}
+
+.txllogo {
+    width: 25%;
+    border-radius: 10%;
+}
+
+.hostcompass {
+    margin-left: 4%;
+}
+
+.projectname {
+    font-weight: 500;
+    font-size: 2.5lvb;
+    color: aqua;
+    text-decoration: underline;
+    text-underline-position: below;
+}
+
+.projectdesc {
+    font-size: 2lvb;
+}
+
+.txl {
+    font-size: 1.9lvb;
+}
+
+.fineprint {
+    font-size:1.2lvb;
+    font-weight: 100;
 }
