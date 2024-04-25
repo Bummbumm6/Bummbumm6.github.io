@@ -1,8 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
+:root {
+    --x: 100%;
+    --y: 100%;
+}
+
 body {
-    background-image: radial-gradient( circle 975px at 2.6% 48.3%,  rgb(0, 9, 32) 0%, rgb(0, 47, 117) 99.7% );
+    background-image: radial-gradient( circle 975px at var(--x) var(--y),  rgb(44, 0, 35) 0%, rgb(0, 9, 32) 99.7% );
+    transition: transform 0.1s
 }
 
 p {
@@ -119,4 +125,26 @@ h1 {
 .fineprint {
     font-size:1.2lvb;
     font-weight: 100;
+}
+
+.social {
+    margin: 5%;
+}
+
+.reddit {
+    border-radius: 20%;
+}
+
+.project {
+    z-index: 9999;
+    z-index: 9999;
+}
+
+@font-face {
+    font-family: twemoji;
+    src: url(twemoji.ttf)
+}
+
+.skoll {
+    font-family: twemoji;
 }

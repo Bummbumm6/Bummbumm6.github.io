@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+
 <head>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,13 +9,28 @@
 </head>
 
 <body>
+    <script>
+        const pos = { x : 0, y : 0 };
+
+        const saveCursorPosition = function(x, y) {
+            pos.x = x / (window.innerHeight / 100);
+            pos.y = y / (window.innerWidth / 100);
+            document.documentElement.style.setProperty('--x', pos.x + "%");
+            document.documentElement.style.setProperty('--y', pos.y + "%");
+            console.log(pos.x);
+            console.log(pos.y);
+        }
+
+        document.addEventListener('mousemove', e => { saveCursorPosition(e.clientX, e.clientY); })
+
+    </script>
     <div class="title">
         <h1 class="titletext">BUMMBUMM6</h1>
     </div>
-
     <div class="sections">'
         <div class="inline">
             <div class="languages">
+                <h1 class="projecttext">Languages</h1>
                 <img alt="Python sucks, it doesn't even have semicolons!!!"src="python.svg" class="lang-icon">
                     <div class="w3-black w3-round inline" style="width:50%">
                         <div class="w3-container w3-green w3-round" style="width:75%;height: 1em;"></div>
@@ -33,16 +50,49 @@
             <div class="middle-section inline">
                 <h1 class="projecttext">Projects</h1>
                 <div class="project hostcompass">
-                    <img src="hc.png" class="hclogo inline">
+                    <img src="hc.png" class="hclogo inline" href="https://hostcompass.github.io/">
                     <p class="inline projectname" href="https://hostcompass.github.io/">Host Compass</p>
-                    <p class="projectdesc">Host Compass is a way to discover new free Minecraft hosts quickly and easily, on a single Discord server.</p>
+                    <p class="projectdesc" href="https://hostcompass.github.io/">Host Compass is a way to discover new free Minecraft hosts quickly and easily, on a single Discord server.</p>
                 </div>
                 <div class="project hostcompass">
-                    <img src="txl.jpg" class="txllogo inline">
-                    <p class="inline projectname txl" href="https://hostcompass.github.io/">TransferXLDownloader</p>
-                    <p class="projectdesc">Allows you to quickly download from the service TransferXL without their sh##ty GUI</p>
+                    <img src="txl.jpg" class="txllogo inline" href="https://github.com/Bummbumm6/TransferXLDownloader">
+                    <p class="inline projectname txl" href="https://github.com/Bummbumm6/TransferXLDownloader">TransferXLDownloader</p>
+                    <p class="projectdesc" href="https://github.com/Bummbumm6/TransferXLDownloader">Allows you to quickly download from the service TransferXL without their sh##ty GUI</p>
                     <p class="fineprint">Warning: According to Google's TAG, TransferXL is being used to spread forms of Bumblebee malware / Exotic Lily exploits. Be careful opening ISOs from them.</p>
                 </div>
         </div>
+        <div class="middle-section inline">
+            <h1 class="projecttext">Socials</h1>
+            <div class="project social" href="https://github.com/Bummbumm6">
+                <img src="github-mark-white.svg" href="https://github.com/Bummbumm6" class="hclogo inline">
+                <p class="inline projectname" href="https://github.com/Bummbumm6">GitHub</p>
+            </div>
+            <div class="project social">
+                <img src="yt_logo_rgb_dark.png" href="https://youtube.com/@bummbumm6" class="hclogo inline">
+                <p class="inline projectname" href="https://youtube.com/@bummbumm6">YouTube</p>
+            </div>
+            <div class="project social">
+                <img src="reddit.webp" href="https://reddit.com/u/bummbumm6" class="hclogo inline reddit">
+                <p class="inline projectname" href="https://reddit.com/u/bummbumm6">Reddit</p>
+            </div>
+            <div class="project social">
+                <img src="768px-Stack_Overflow_icon.svg.png" href="https://stackoverflow.com/users/20824660/bummbumm6" class="hclogo inline">
+                <p class="inline projectname" href="https://stackoverflow.com/users/20824660/bummbumm6">SO (cringe)</p>
+            </div>
+        </div>
     </div>
+    <audio muted autoplay controls loop id="backgroundmusic" style="scale: 0"><source src="i-dont-care-about-your-opinion.mp3" type="audio/mpeg"></audio>
+        <script>
+            music = document.getElementById("backgroundmusic")
+            music.pause()
+            music.volume = 0.05
+            music.muted = 1
+            setTimeout(function () {
+                music.muted = 1
+                music.muted = 0
+                music.play()
+            }, 1001);
+        </script>
+
+    <p>This website is boring until I find the time to fix it <a class="skoll">💀</a></p>
 </body>
